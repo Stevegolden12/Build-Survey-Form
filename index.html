@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <h1 id="title">Title</h1>
+    <p id="description"></p>
+    <form id="survey-form">
+
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" id="name" placeholder="First and Last Name" />
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" placeholder="Enter full email" />
+        </br></br>
+        <label for="number" id="number-label">Number: </label>
+        <input type="number" id="number" placeholder="Between 0-100" min="0" max="100" />
+        </br></br>
+        <label for="dropdown" id="dropdown">Choose breakfast: </label>
+
+        <select>
+            <option>Cereal</option>
+            <option>Omelets</option>
+            <option>Pancakes</option>
+            <option>Waffles</option>
+        </select>
+
+        <p>Please select which type of bed you prefer:</p>
+        <input type="radio" name="bed" />
+        <label for="bed">Single</label>
+        <input type="radio" name="bed" />
+        <label for="bed">Queen</label>
+        <input type="radio" name="bed" />
+        <label for="bed">King</label>
+        <input type="radio" name="bed" />
+        <label for="bed" id="bed-label">California King</label>
+
+        <p>What type of music do you like?</p>
+        <input type="checkbox" name="music" />
+        <label for="music">Classical</label>
+        <input type="checkbox" name="music" />
+        <label for="music">Country</label>
+        <input type="checkbox" name="music" />
+        <label for="music">Pop</label>
+        <input type="checkbox" name="music" />
+        <label for="music">Rap</label>
+        <input type="checkbox" name="music" />
+        <label for="music">Rock</label>
+        </br></br>
+        <label for="comments" id="comments-label">Additional Comments</label>
+        <textarea" id="comments></textarea">
+        </br></br>
+        <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
