@@ -7,53 +7,78 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <h1 id="title">Title</h1>
-    <p id="description"></p>
+    <h1 id="title">Survey Form</h1>
+    <main class="index__mainWrapper">
+    <p id="description">What do you like?</p>
     <form id="survey-form">
 
         <label for="name" id="name-label">Name: </label>
         <input type="text" id="name" placeholder="First and Last Name" />
+        </br></br>
         <label for="email" id="email-label">Email: </label>
         <input type="email" id="email" placeholder="Enter full email" />
         </br></br>
-        <label for="number" id="number-label">Number: </label>
-        <input type="number" id="number" placeholder="Between 0-100" min="0" max="100" />
+        <label for="number" id="number-label">Age: </label>
+        <input type="number" id="number" placeholder="Enter Age" min="0" max="100" />
         </br></br>
         <label for="dropdown" id="dropdown">Choose breakfast: </label>
 
-        <select>
+        <select class="index__brkfstOpt">
             <option>Cereal</option>
             <option>Omelets</option>
             <option>Pancakes</option>
             <option>Waffles</option>
         </select>
 
-        <p>Please select which type of bed you prefer:</p>
-        <input type="radio" name="bed" />
-        <label for="bed">Single</label>
-        <input type="radio" name="bed" />
-        <label for="bed">Queen</label>
-        <input type="radio" name="bed" />
-        <label for="bed">King</label>
-        <input type="radio" name="bed" />
-        <label for="bed" id="bed-label">California King</label>
+        <p class="index__bedChs">Please select which type of bed you prefer:</p>
+        <ul class="index__bedOpt">
+          <li>
+            <input type="radio" name="bed" />
+            <label for="bed">Single</label>
+          </li>
+          <li>
+            <input type="radio" name="bed" />
+            <label for="bed">Queen</label>
+          </li>
+          <li>
+            <input type="radio" name="bed" />
+            <label for="bed">King</label>
+          </li>
+          <li>
+            <input type="radio" name="bed" />
+            <label for="bed" id="bed-label">California King</label>
+          </li>
+        </ul>
 
-        <p>What type of music do you like?</p>
-        <input type="checkbox" name="music" />
-        <label for="music">Classical</label>
-        <input type="checkbox" name="music" />
-        <label for="music">Country</label>
-        <input type="checkbox" name="music" />
-        <label for="music">Pop</label>
-        <input type="checkbox" name="music" />
-        <label for="music">Rap</label>
-        <input type="checkbox" name="music" />
-        <label for="music">Rock</label>
-        </br></br>
+        <p class="index__musicChs">What type of music do you like?</p>
+        <ul class="index__musicOpt">
+          <li>
+            <input type="checkbox" name="music" />
+            <label for="music">Classical</label>
+          </li>
+          <li>
+            <input type="checkbox" name="music" />
+            <label for="music">Country</label>
+          </li>
+          <li>
+            <input type="checkbox" name="music" />
+            <label for="music">Pop</label>
+          </li>
+          <li>
+            <input type="checkbox" name="music" />
+            <label for="music">Rap</label>
+          </li>
+          <li>
+            <input type="checkbox" name="music" />
+            <label for="music">Rock</label>
+          </li>
+        </ul>
         <label for="comments" id="comments-label">Additional Comments</label>
-        <textarea" id="comments></textarea">
-        </br></br>
+        <textarea id="comments" placeholder="Add any additional comments"></textarea>
+
         <button type="submit" id="submit">Submit</button>
+        </br>
 </form>
+</main>
 </body>
 </html>

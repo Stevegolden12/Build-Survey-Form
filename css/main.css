@@ -1,3 +1,158 @@
-﻿body
-{
+﻿
+:root {
+    --main-bkgnd-color: #d3d697;
+    --main-front-color: white;
+    --small-bkpnt-font: 22px;
+}
+
+body {
+    background-color: var(--main-bkgnd-color);
+}
+.index__mainWrapper {
+    background-color: var(--main-front-color);
+    font-size: var(--small-bkpnt-font);
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#name,
+#email,
+#number {
+    width: 90%;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+#dropdown {
+  display: block;
+  text-align: center;
+}
+
+.index__brkfstOpt {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 33px;
+}
+
+.index__bedChs {
+    text-align: center;
+}
+
+.index__bedOpt {
+    list-style: none;
+}
+
+.index__musicChs {
+  text-align: center;
+}
+
+.index__musicOpt {
+  list-style: none;
+}
+
+#comments-label {
+  display: block;
+  text-align: center;  
+}
+
+#comments {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 25px;
+  height: 60px;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+/* 768px breakpoint */
+@media (min-width: 768px) {
+    #name-label,
+    #email-label,
+    #number-label,
+    #dropdown{
+      width: 25%;
+      text-align: right;
+      padding-right: 5px;
+    }
+
+  #dropdown {
+    display:inline-block;
+  }
+
+  #name,
+  #email,
+  #number{
+    display: inline-block;
+    width: 64%;
+  }
+
+  .index__brkfstOpt {
+    display: inline-block;
+    width: calc(64% + 5px);
+  }
+
+  .index__bedOpt {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .index__musicOpt {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
+/* 1024px breakpoint */
+@media(min-width: 1024px) {
+  #name-label,
+  #email-label,
+  #number-label,
+  #dropdown {
+    width: 40%;
+  }
+
+  #name,
+  #email,
+  #number {
+    width: 30%;
+  }
+
+  .index__brkfstOpt {
+    width: calc(30% + 5px);
+  }
+
+  .index__bedOpt {
+    justify-content: space-evenly;
+  }
+
+  .index__musicOpt {
+    justify-content: space-evenly;
+  }
+
 }
